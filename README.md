@@ -19,5 +19,4 @@ how to upload a link?
 
 Have docker?
 
-docker built -t file-uploader .
-docker run -it file-uploader
+docker built -p 5000:5000 -it file-uploader .
