@@ -16,3 +16,8 @@ python3 -m flask run
 
 how to upload a link?
  curl -X POST localhost:5000/youtube?link=<your youtube link>
+
+Have docker?
+
+docker built -t file-uploader .
+docker run -it file-uploader
