@@ -1,0 +1,17 @@
+FROM python:3
+WORKDIR /usr/src/app
+COPY requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt
+COPY . /usr/src/app/
+#ADD https://s3.amazonaws.com/epistema-resuorces/EpistemaAnalysisServer/Goo$
+CMD [ "FROM python:3
+WORKDIR /usr/src/app
+COPY requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt
+COPY . /usr/src/app/
+#ADD https://s3.amazonaws.com/epistema-resuorces/EpistemaAnalysisServer/Goo$
+CMD [ "python", "./IME.py" ]
+EXPOSE 5000 5002
+" ]
+EXPOSE 5000
+
