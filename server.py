@@ -1,8 +1,10 @@
 from flask import Flask, request
+from flask_cors import CORS
 import sys,subprocess
 from pytube import YouTube
 
 app = Flask(__name__)
+CORS(app)
 @app.route('/youtube', methods=['POST'])
 def fromYoutubeToMega():
 	link = request.args.get("link")
